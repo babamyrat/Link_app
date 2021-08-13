@@ -14,15 +14,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Uri uri = getIntent().getData();
-
-        if (uri != null) {
-            String path = uri.toString();
-            Toast.makeText(MainActivity.this, "Path =: "+path, Toast.LENGTH_SHORT).show();
-
-            Intent intent = new Intent(MainActivity.this, SecondActivity.class);
-            startActivity(intent);
-        }
+//        Uri uri = getIntent().getData();
+//
+//        if (uri != null) {
+//            String path = uri.toString();
+//            Toast.makeText(MainActivity.this, "Path =: "+path, Toast.LENGTH_SHORT).show();
+//
+//            Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+//            startActivity(intent);
+//        }
 
 
     }

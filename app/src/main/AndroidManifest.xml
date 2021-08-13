@@ -11,15 +11,8 @@
         android:theme="@style/Theme.Link_app">
         <activity
             android:name=".SecondActivity"
-            android:exported="true" />
-        <activity
-            android:name=".MainActivity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
 
@@ -28,8 +21,34 @@
 
                 <data
                     android:host="www.maps.google.com"
-                    android:scheme="https"></data>
+                    android:scheme="https">
+
+                </data>
             </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.VIEW" />-->
+
+<!--                <category android:name="android.intent.category.DEFAULT" />-->
+<!--                <category android:name="android.intent.category.BROWSABLE" />-->
+
+<!--                <data-->
+<!--                    android:host="www.maps.google.com"-->
+<!--                    android:scheme="https"></data>-->
+<!--            </intent-filter>-->
+
+
         </activity>
     </application>
 
